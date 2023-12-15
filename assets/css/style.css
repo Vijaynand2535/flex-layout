@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-primary : #f6d200;
+    --color-grey : #ededed;
+    --color-dark : #000;
+    --color-white : #ffff;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@300;400;700;900&display=swap');
+
+
+body{
+    background-color: var(--color-grey);
+    color: var(--color-dark);
+    line-height: 1.5;
+    font-family: 'Asap', sans-serif;
+
+}
+
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* ############  header css  ####### */
+
+.header{
+    background-color: #000;
+    color: #fff;
+    height: 400px;
+   
+}
+.header h1{
+    text-transform:uppercase;
+
+}
+.header p{
+    font-style: italicS;
+}
+
+.navbar{
+    background-color : var(--color-primary);
+}
+
+.siteinfo{
+    flex-grow: 1;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.navbar ul li a:link,
+.navbar ul li a:visited {
+    text-transform: capitalize;
+    background-color: var(--color-primary);
+    color:var(--color-dark);
+    text-align: center;
+    font-size: 24px;
+    padding: 10px;
+    font-weight: bold;
+    display: block;
+    transition: all .4s ease-in-out;
+}
+.navbar ul li a:hover,
+.navbar ul li a:focus,
+.navbar ul li a:active{
+    background-color:var(--color-dark);
+    color: var(--color-primary);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (min-width:1180px){
+    .navbar ul{
+        display: flex;
+    }
+    .navbar li{
+        flex-grow: 1;
+    }
+}
+
+
+
+
+
+
+
